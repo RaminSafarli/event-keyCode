@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #00da7f;
+    --btn-color: #c34e00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--btn-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    width: 70vw;
+    max-width: 100%;
+}
+
+.event-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 100%;
+}
+
+.box{
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    margin: 1rem;
+    position: relative;
+    width: 30%;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+    font-size: 20px;
+}
+
+.box:nth-child(1)::after{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+    content: 'Code';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    margin-left: 5px;
+}
+
+.box:nth-child(2)::after {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+    content: 'Key';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    margin-left: 5px;
+}
+
+.box:nth-child(3)::after {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+    content: 'KeyCode';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    margin-left: 5px;
+}
+
